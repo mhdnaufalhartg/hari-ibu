@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  /* background-color: #f3ebe9; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* text-transform: uppercase; */
+    margin-right: 17px;
+  }
+
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid indigo;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+}
+
+/* 552 280 320 375 360 */
+
+@media (min-width: 552px) {
+  .collapse {
+    display: inline-block;
+    text-align: right;
+  }
+}
+
+.col {
+  margin-top: 80px;
+}
+
+.card {
+  max-width: 235px;
+  /* max-height: 350px; */
+}

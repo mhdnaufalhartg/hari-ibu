@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+  background-image: url('../assets/icon/momchild.jpg');
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  background-color: #fbffe2;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* text-transform: uppercase; */
+    margin-right: 17px;
+  }
+
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid indigo;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+}
+
+/* 552 280 320 375 360 */
+
+@media (min-width: 552px) {
+  .collapse {
+    display: inline-block;
+    text-align: right;
+  }
+}
+
+@media (min-width: 280px) {
+  .collapse {
+    display: inline-block;
+    text-align: right;
+  }
+}
+
+.landing-text {
+  margin-top: 150px;
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.col {
+  padding-top: 280px;
+}
+
+@media (max-width: 552px) {
+  .col {
+    padding-top: 50px;
+  }
+  .card {
+    margin-left: 28px;
+  }
+}
+
+.bg-header {
+  font-family: monospace;
+  color: #064663;
+}
+
+.p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.btn {
+  font-family: monospace;
+  width: 130px;
+}
+
+.footer {
+  margin-bottom: 50px;
+}
+.title {
+  color: indigo;
+}
