@@ -117,21 +117,30 @@
           </div>
           <div class="row justify-content-center ">              
               <div class="col-md-6 col-lg-6" data-aos="zoom-in" data-aos-delay="900">
-                <div class="mb-2 mt-2">
-                    <label for="name" class="form-label">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="name" placeholder="">
-                </div>  
-                <div class="mb-2">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="email" placeholder="name@colleger.id">
-                </div> 
-                <div class="mb-2">
-                    <label for="text-area" class="form-label">Pesan</label>
-                    <textarea class="form-control" id="text-area" rows="3"></textarea>
-                  </div> 
-                  <div class="mb-2">
-                    <button type="submit" class="btn btn-primary mb-3">Kirim</button>
+                <div class="alert alert-success alert-dismissible fade show d-none myAlert" role="alert">
+                    <strong>Terima Kasih!</strong> Pesan anda sudah kami terima.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>
+                <form name="colleger-form-contact">
+                    <div class="mb-2 mt-2">
+                        <label for="name" class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="name" placeholder="" name="nama" required>
+                    </div>  
+                    <div class="mb-2">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" placeholder="name@colleger.id" name="email" required>
+                    </div> 
+                    <div class="mb-2">
+                        <label for="text-area" class="form-label">Pesan</label>
+                        <textarea class="form-control" id="text-area" rows="3" name="pesan" required></textarea>
+                      </div>                                               
+                        <button type="submit" class="btn btn-kirim btn-primary mb-3">Kirim</button>
+
+                        <button class="btn btn-primary btn-loading d-none mb-3" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Kirim...
+                        </button>                                                     
+                </form>
                 </div>
           </div>
       </div>
